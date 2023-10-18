@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>GR Turimo</title>
+    <!-- Inclua os links para os arquivos CSS e JS do Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        body * {
+            box-sizing: border-box;
+        }
+
+        .main-login {
+            width: 100vw;
+            height: 100vh;
+            background: #403831;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .left-login {
+            width: 50vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .left-login h1 {
+            color: #0b8185;
+            font-size: 3vw;
+        }
+
+        .left-login-img {
+            width: 35vw;
+        }
+
+        .right-login {
+            width: 50vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card-login {
+            width: 60%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 30px 35px;
+            background: #403831;
+            border-radius: 20px;
+            box-shadow: 0px 10px 40px #00000056;
+        }
+
+        .card-login h1 {
+            color: #0b8185;
+            font-weight: 800;
+            margin: 0;
+        }
+
+        .textfield {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            margin: 10px 0px;
+        }
+
+        .textfield input {
+            width: 100%;
+            border: none;
+            border-radius: 10px;
+            padding: 15px;
+            background: #36544f;
+            color: #f0ffffde;
+            font-size: 12pt;
+            box-shadow: 0px 10px 40px #00000056;
+            outline: none;
+            box-sizing: border-box;
+        }
+
+        .textfield label {
+            color: #f0ffffde;
+            margin-bottom: 10px;
+        }
+
+        .textfield input::placeholder {
+            color: #f0ffff94;
+        }
+
+        .btn-login {
+            width: 100%;
+            padding: 16px 0px;
+            margin: 25px;
+            border: none;
+            border-radius: 8px;
+            outline: none;
+            font-weight: 800;
+            letter-spacing: 3px;
+            color: #FFF;
+            background: #0b8185;
+            cursor: pointer;
+            box-shadow: 0px 10px 40px -12px #0b8185;
+        }
+
+        @media (max-width: 950px) {
+            .card-login {
+                width: 85%;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .main-login {
+                flex-direction: column;
+            }
+
+            .left-login h1 {
+                display: none;
+            }
+
+            .left-login {
+                width: 100%;
+                height: auto;
+            }
+
+            .right-login {
+                width: 100%;
+                height: auto;
+            }
+
+            .left-login-img {
+                width: 50vw;
+            }
+
+            .card-login {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- Barra de navegação -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">GR Turismo </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="destino.html">DESTINOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="promocoes.html">PROMOÇÕES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">CONTATO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cadastro.html">CADASTRO</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</body>
+
+<body>
+
+    <div class="main-login">
+        <div class="left-login">
+            <h1>Faça seu login<br>E acesse nossos serviços.</h1>
+            <img src="./img/logo.png" class="left-login-img"
+                alt="Animação em 2D de uma astronauta em um traje verde flutuando entre estrelas e luas">
+        </div>
+        <div class="right-login">
+            <div class="card-login">
+                <h1>LOGIN</h1>
+                <div class="textfield">
+                    <label for="usuario">Usuário</label>
+                    <input type="text" name="usuario" placeholder="Digite seu usuário" required>
+                </div>
+                <div class="textfield">
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" placeholder="Digite a sua senha" required>
+                </div>
+                <button class="btn-login"><a href="promocoes.html">ENTRAR</a></button>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+    <script>
+        document.getElementById("btn-login").addEventListener("click", function () {
+
+            var usuario = document.getElementById("usuario").value;
+            var senha = document.getElementById("senha").value;
+
+            if (usuario === "" || senha === "") {
+                alert("Preencha ambos os campos de usuário e senha.");
+            } else {
+                if (usuario === "seuUsuario" && senha === "suaSenha") {
+                    alert("Login bem-sucedido!");
+
+                } else {
+                    alert("Credenciais inválidas. Tente novamente.");
+                }
+            }
+        });
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+<div class="copyright">
+    <br>
+    <p>
+        © Copyright 2023 G R Tour. Todos direitos reservados.
+    </p>
+</div>
+
+</html>

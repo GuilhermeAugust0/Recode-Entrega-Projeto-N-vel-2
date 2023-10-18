@@ -1,0 +1,703 @@
+/* paleta de cores
+.color1 { #30261c };
+.color2 { #403831 };
+.color3 { #36544f };
+.color4 { #1f5f61 };
+.color5 { #0b8185 };
+*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.sobre {
+    display: inline-flex;
+    width: 100%;
+    height: 250px;
+    padding-top: 20px;
+
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.logo img {
+    width: 200px;
+    height: 200px;
+    padding-bottom: 20px;
+}
+
+.texto {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    color: #403831;
+    height: 250px;
+    text-align: justify;
+}
+
+.fotos {
+    display: flex;
+    width: 100%;
+    height: 140px;
+    background-color: #403831;
+    position: static;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+    color: #0b8185;
+    margin-top: 100px;
+
+}
+
+.foto1,
+.foto2,
+.foto3,
+.foto4,
+.foto5,
+.foto6,
+.foto7 {
+    display: flex;
+    width: 50%;
+    height: 140px;
+    justify-content: space-between;
+    position: sticky;
+    object-fit: cover;
+    margin-left: 140px;
+}
+
+.fotos p {
+    color: #0b8185;
+    font-size: x-large;
+}
+
+.copyright {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #36544f;
+    color: #fff;
+   }
+
+/* DESTINOS*/
+main {
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #403831;
+}
+
+.destino {
+    width: 30em;
+    height: 30em;
+    background-color: #36544f;
+    border-radius: 8px;
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 1.3em;
+    margin-top: 25px;
+    color: #0b8185;
+}
+
+.idaEVolta {
+    margin-top: 40px;
+    margin-left: 35px;
+}
+
+.origem {
+    display: flex;
+    width: 400px;
+    height: 30px;
+    background-color: #fbfbfb;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+
+.destinoo {
+    display: flex;
+    width: 400px;
+    height: 30px;
+    background-color: #fbfbfb;
+    margin-top: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.textOrigem {
+    width: 400px;
+    border-color: transparent;
+}
+
+.data {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 10px;
+    margin-left: 45px;
+    margin-right: 30px;
+}
+
+.date {
+    max-width: 180px;
+    height: 30px;
+    border-radius: 8px;
+}
+
+.contato {
+    display: flex;
+    width: 400px;
+    height: 30px;
+    background-color: #fbfbfb;
+    margin-top: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-left: 37px;
+    margin-top: 30px;
+}
+
+.number,
+.email {
+    width: 450px;
+    border-color: transparent;
+}
+
+
+.date {
+    width: 200px;
+    border-color: transparent;
+}
+
+p {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 0.9em;
+    color: #0b8185;
+}
+
+.botton_insert {
+    display: inline-block;
+    margin-left: 70px;
+    text-decoration: none;
+    color: aliceblue;
+    border-radius: 8px;
+    background: #0b8185;
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
+    padding: 10px 120px;
+    margin-top: 5px;
+}
+
+.botton_insert:hover {
+    background-color: #259df3;
+}
+
+@media (max-width: 480px) {
+
+
+    main {
+        display: block;
+        background-color: #0b8185;
+        padding: 10px;
+        width: 50% auto;
+        margin: 0 auto;
+        background-color: #fff;
+    }
+
+    .destino {
+        width: 70%;
+        height: auto;
+        margin: 0 auto;
+
+
+    }
+
+    h1 {
+        font-size: 1.2em;
+        margin-top: 15px;
+    }
+
+
+
+    .idaEVolta {
+        max-width: 80px;
+        margin-left: 30px;
+        margin-top: 20px;
+    }
+
+    .origem,
+    .destinoo,
+    .quarto,
+    .contato {
+        width: 190px;
+    }
+
+    .quarto,
+    .contato {
+        margin-left: 28px;
+    }
+
+    .data {
+        display: inline-block;
+        margin-top: 2px;
+        margin-left: px;
+    }
+
+    .data1,
+    .data2 {
+        margin-top: 10px;
+        margin-right: 50px;
+        margin-left: -15px;
+    }
+
+    .textOrigem,
+    .number,
+    .email {
+        width: 170px;
+        margin: 0 auto;
+
+    }
+
+    p {
+        margin-top: 25px;
+        font-size: 12px;
+    }
+
+    ::placeholder {
+        font-size: 12px;
+    }
+
+    .botton_insert {
+        padding: 5px 50px;
+        margin-left: 25px;
+    }
+}
+
+    /* LUGARES*/
+
+    .lugares {
+        display: table;
+        align-items: center;
+        width: 100%;
+        height: 100% auto;
+        background-color: #403831;
+        justify-content: center;
+    }
+
+    .pais1 {
+        display: inline-flex;
+        width: 80%;
+        height: 230px;
+        background-color: #36544f;
+        margin-left: 130px;
+        flex-direction: row;
+
+    }
+
+    .fotopais1 img {
+        display: flex;
+        width: 280px;
+        height: 190px;
+        margin-top: 20px;
+
+    }
+
+    .descricao1 {
+        width: 70%;
+        height: 250px;
+        margin-left: 30px;
+        text-align: justify;
+        color: black;
+        border: auto;
+    }
+
+    .pais2 {
+        display: inline-flex;
+        width: 80%;
+        height: 270px;
+        background-color: #36544f;
+        margin-left: 130px;
+        flex-direction: row;
+    }
+
+    .fotopais2 img {
+        display: flex;
+        width: 280px;
+        height: 190px;
+        margin-top: 40px;
+
+    }
+
+    .descricao2 {
+        width: 70%;
+        height: 250px;
+        margin-left: 30px;
+        text-align: justify;
+        color: black;
+        border: auto;
+    }
+
+    .pais3 {
+        display: inline-flex;
+        width: 80%;
+        height: 230px;
+        background-color: #36544f;
+        margin-left: 130px;
+        flex-direction: row;
+    }
+
+    .fotopais3 img {
+        display: flex;
+        width: 280px;
+        height: 190px;
+        margin-top: 20px;
+
+    }
+
+    .descricao3 {
+        width: 70%;
+        height: 230px;
+        margin-left: 30px;
+        text-align: justify;
+        color: black;
+
+    }
+
+    .pais4 {
+        display: inline-flex;
+        width: 80%;
+        height: 230px;
+        background-color: #36544f;
+        margin-left: 130px;
+        flex-direction: row;
+    }
+
+    .fotopais4 img {
+        display: flex;
+        width: 280px;
+        height: 190px;
+        margin-top: 20px;
+
+    }
+
+    .descricao4 {
+        width: 70%;
+        height: 230px;
+        margin-left: 30px;
+        text-align: justify;
+        color: black;
+
+    }
+
+    .pais5 {
+        display: inline-flex;
+        width: 80%;
+        height: 250px;
+        background-color: #36544f;
+        margin-bottom: 10px;
+        margin-left: 130px;
+        flex-direction: row;
+
+    }
+
+    .fotopais5 img {
+        display: flex;
+        width: 280px;
+        height: 190px;
+        margin-top: 30px;
+
+    }
+
+    .descricao5 {
+        width: 70%;
+        height: 180px;
+        margin-left: 30px;
+        text-align: justify;
+        color: black;
+        margin-top: 10px;
+    }
+
+    /*PROMOÇÕES*/
+    .pacotes .pacotes-cards {
+        margin: auto;
+        max-width: 950px;
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    .pacotes .pacotes-title {
+        width: 100%;
+        margin: auto;
+        padding: 15px;
+        text-align: center;
+        color: #0b8185;
+    }
+
+    .pacotes .card {
+        margin: 25px;
+        width: 250px;
+        height: 400px;
+        background: #30261c;
+        border-radius: 8px 8px;
+        box-shadow: 0px 0px 4px -1px #222;
+        position: relative;
+        transition: all 1s;
+        margin-left: 40px;
+    }
+
+    .pacotes .card:hover {
+        transform: scale(1.1);
+    }
+
+    .pacotes .card-image {
+        width: 240px;
+        height: 180px;
+        border-radius: 24px 0 0 0;
+        object-fit: cover;
+    }
+
+    .pacotes .card-content {
+        padding: 0 15px;
+    }
+
+    .pacotes .card-content h1 {
+        font-size: 0.9rem;
+        color: #fff;
+    }
+
+    .pacotes .card-content ul {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        padding-left: 0;
+    }
+
+    .pacotes .card-content ul li {
+        font-size: 0.6rem;
+        display: flex;
+        align-items: center;
+        margin: 3px 0px;
+        color: gray;
+        font-weight: bold;
+    }
+
+    .pacotes .card-content li svg {
+        width: 16px;
+        height: 16px;
+        margin-right: 10px;
+    }
+
+
+
+    .pacotes .card .card-tag-bottom {
+        position: absolute;
+        left: 0;
+        top: 160px;
+        background: #0b8185;
+        border-radius: 0 8px 8px 0;
+        padding: 5px 10px;
+        box-shadow: 1px 1px 4px 1px #222;
+    }
+
+    .pacotes .card .card-tag p {
+        margin: 0;
+        font-size: 0.8rem;
+        font-weight: bold;
+        color: #fff;
+    }
+
+    /* Responsividade Index */
+
+    @media (max-width: 480px) {
+        .sobre {
+            flex-direction: column;
+            height: auto;
+            margin: 0px auto;
+            display: block;
+        }
+
+        .texto {
+            width: 100%;
+            padding: 0%;
+            margin: 20px auto;
+        }
+
+        .logo {
+            width: 100%;
+            padding: 40px;
+            margin: 20px auto;
+        }
+
+    }
+
+    @media (max-width: 768px) {
+        .sobre {
+            flex-direction: column;
+            height: auto;
+            margin: 0px auto;
+            display: block;
+        }
+
+        .texto {
+            width: 80%;
+            padding: 0%;
+            margin: 20px auto;
+        }
+
+        .logo {
+            width: 80%;
+            padding: 40px;
+            margin: 20px auto;
+        }
+    }
+
+    /* Responsividade Carrosel */
+
+    @media (max-width: 480px) {
+        .fotos {
+            flex-wrap: nowrap;
+            overflow: scroll;
+        }
+
+        .foto1,
+        .foto2,
+        .foto3,
+        .foto4,
+        .foto5,
+        .foto6,
+        .foto7 {
+            width: 100%;
+            height: 100px;
+            justify-content: space-evenly;
+        }
+    }
+
+    /* Responsividade Destino */
+
+    @media (max-width: 480px) {
+        .lugares {
+            width: 70%;
+            margin: 0 auto;
+        }
+
+        .pais1 {
+            width: 70% auto;
+            margin: 0 auto;
+            height: auto;
+            flex-direction: column;
+            margin-left: 30px;
+        }
+
+        .fotopais1 img {
+            width: 100%;
+            height: auto;
+            margin-top: 15px;
+        }
+
+        .descricao1 {
+            width: 80%;
+            height: auto;
+            margin-left: 0;
+            margin-left: 30px;
+        }
+
+        .pais2 {
+            width: 75% auto;
+            margin: 0 auto;
+            height: auto;
+            flex-direction: column;
+            margin-left: 30px;
+        }
+
+        .fotopais2 img {
+            width: 100%;
+            height: auto;
+            margin-top: 15px;
+        }
+
+        .descricao2 {
+            width: 80%;
+            height: auto;
+            margin-left: 0;
+            margin-left: 30px;
+        }
+
+        .pais3 {
+            width: 75% auto;
+            margin: 0 auto;
+            height: auto;
+            flex-direction: column;
+            margin-left: 30px;
+        }
+
+        .fotopais3 img {
+            width: 100%;
+            height: auto;
+            margin-top: 15px;
+        }
+
+        .descricao3 {
+            width: 80%;
+            height: auto;
+            margin-left: 0;
+            margin-left: 30px;
+        }
+
+        .pais4 {
+            width: 75% auto;
+            margin: 0 auto;
+            height: auto;
+            flex-direction: column;
+            margin-left: 30px;
+        }
+
+        .fotopais4 img {
+            width: 100%;
+            height: auto;
+            margin-top: 15px;
+
+        }
+
+        .descricao4 {
+            width: 80%;
+            height: auto;
+            margin-left: 0;
+            margin-left: 30px;
+        }
+
+        .pais5 {
+            width: 75% auto;
+            margin: 0 auto;
+            height: auto;
+            flex-direction: column;
+            margin-left: 30px;
+        }
+
+        .fotopais5 img {
+            width: 100%;
+            height: auto;
+            margin-top: 15px;
+
+        }
+
+        .descricao5 {
+            width: 80%;
+            height: auto;
+            margin-left: 0;
+            margin-left: 30px;
+        }
+    }
